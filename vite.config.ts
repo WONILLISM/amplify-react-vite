@@ -12,4 +12,11 @@ export default defineConfig({
       },
     ],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        intro: "if(exports === undefined){var exports ={}; var self = {}}",
+      },
+    },
+  },
 });
