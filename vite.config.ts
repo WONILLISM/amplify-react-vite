@@ -1,11 +1,9 @@
-import reactRefresh from "@vitejs/plugin-react-refresh";
 import { defineConfig } from "vite";
-// import react from "@vitejs/plugin-react";
+import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // plugins: [react()],
-  plugins: [reactRefresh()],
+  plugins: [react()],
   resolve: {
     alias: [
       {
@@ -13,12 +11,5 @@ export default defineConfig({
         replacement: "./runtimeConfig.browser",
       },
     ],
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        intro: "if(exports === undefined){var exports ={}; var self = {}}",
-      },
-    },
   },
 });
