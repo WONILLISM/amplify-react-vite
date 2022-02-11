@@ -1,12 +1,5 @@
-import { AmplifyProvider, withAuthenticator } from "@aws-amplify/ui-react";
-import "@aws-amplify/ui-react/styles.css"; // default theme
-
 function App() {
-  return (
-    <AmplifyProvider>
-      <App />
-    </AmplifyProvider>
-  );
+  return <div>Hello</div>;
 }
 
-export default withAuthenticator(App);
+export default App;
